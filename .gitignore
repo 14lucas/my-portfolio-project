@@ -1,4 +1,7 @@
 
+# ## image folder
+images/
+
 ### Ansible files ###
 *.retry
 
@@ -13,7 +16,7 @@ Leiningen.gitignore
 .cvsignore
 */.cvsignore
 
-
+images/
 ### Gpg files ###
 secring.*
 
