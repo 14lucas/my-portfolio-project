@@ -23,8 +23,10 @@ if(navToggle){
 const navLink = document.querySelectorAll(".nav-link");
 
 function linkAction(){
-    const navMenu = document.querySelector(".menu");
+
+    const navMenu = document.querySelector(".menu");  
     navMenu.classList.remove("active");
+    
 }
 
 
@@ -194,5 +196,7 @@ lightbox.addEventListener("click", function(event) {
         toggleLightbox();
     }
 })
+
+
 
 

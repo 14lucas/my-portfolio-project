@@ -723,20 +723,35 @@ img {
 
 /* ================== testimonial section starts ====================== */
 
-.testimonial-section {
-  min-height: 100vh;
-  background-color: var(--black-100);
-
-
+.testimonial-section .row {
+  display: flex;
+  flex-wrap: nowrap; /* Ensures items stay in one row */
+  overflow-x: auto; /* Allows horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Smooth snap effect */
+  gap: 20px; /* Adds spacing between items */
+  padding: 20px;
 }
 
-.testimonial-section .testimonial-item {
+/* Hide the scrollbar */
+.testimonial-section .row::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial-item {
+  flex: 0 0 auto; /* Prevents shrinking, keeps items in one row */
+  max-width: 33.33%; /* Adjust width as needed */
+  scroll-snap-align: center; /* Snaps items into place */
+}
+
+
+/* .testimonial-section .testimonial-item {
   margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
   max-width: 33.33%;
-}
+} */
+
 
 .testimonial-section .testimonial-item-inner {
   box-shadow: var(--shadow-black-100);
